@@ -9,6 +9,7 @@ class LinkedList {
     this.tail = this.head;
     this.length = 1;
   }
+  //add to the end of list
   append(value) {
     const newNode = {
       value: value,
@@ -19,6 +20,7 @@ class LinkedList {
     this.length++;
     return this;
   }
+  //ass to beginning of list
   prepend(value) {
     const newNode = {
       value: value,
@@ -49,6 +51,7 @@ class LinkedList {
       value: value,
       next: null,
     };
+    //leader is node before index
     const leader = this.traverseToIndex(index - 1);
     const holdingPointer = leader.next;
     leader.next = newNode;
@@ -56,6 +59,7 @@ class LinkedList {
     this.length++;
     return this.printList();
   }
+  //traverse every node
   traverseToIndex(index) {
     //Check parameters
     let counter = 0;
