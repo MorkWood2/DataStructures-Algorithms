@@ -20,7 +20,7 @@ class LinkedList {
     this.length++;
     return this;
   }
-  //ass to beginning of list
+  //pass to beginning of list
   prepend(value) {
     const newNode = {
       value: value,
